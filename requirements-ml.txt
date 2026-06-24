@@ -1,0 +1,30 @@
+# Core API
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.6
+python-dotenv>=1.0
+
+# General
+requests>=2.32
+numpy>=1.26
+pillow>=10.0
+pyyaml>=6.0
+tqdm>=4.66
+typing-extensions>=4.7
+
+# ML / CV
+transformers>=4.35.0
+torch>=2.0.0
+torchvision>=0.15.0
+Pillow>=10.0.0
+safetensors>=0.4.0
+ultralytics==8.3.213
+
+# OpenCV: use non-GUI on Linux (smaller Docker images), regular elsewhere
+opencv-python ; platform_system != "Linux"
+opencv-python-headless==4.8.1.78
+
+# AWS and SageMaker
+boto3>=1.26
+awscli>=1.27
+sagemaker>=2.98.0
